@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-charcoal: #171614;
+  --color-charcoal-muted: #2A2825;
+  --color-ivory: #F7F3EB;
+  --color-ivory-soft: #FAF8F4;
+  --color-gold: #B99A61;
+  --color-gold-light: #CEB587;
+  --color-gold-dark: #987B43;
+  --color-beige: #E8DFD0;
+  --color-beige-subtle: #F0E9DC;
+}
+
+:root {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #F7F3EB;
+  color: #171614;
+  overflow-x: hidden;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CEBD;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B99A61;
+}
+
+/* Subtle luxury gold gradient utilities */
+.gold-shimmer {
+  background: linear-gradient(135deg, #B99A61 0%, #D4BE92 50%, #A38448 100%);
+}
+
+.dark-luxury-gradient {
+  background: radial-gradient(circle at 50% 20%, #2A2622 0%, #171614 100%);
+}
