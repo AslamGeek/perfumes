@@ -6,7 +6,6 @@
 import React, { useState, useRef } from "react";
 import { initialConfig, ShopConfig } from "./data/config";
 import { PRODUCTS, Product, CategoryType, FragranceFamily } from "./data/products";
-import { AnnouncementBar } from "./components/AnnouncementBar";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { CategorySection } from "./components/CategorySection";
@@ -64,13 +63,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F7F3EB] text-[#171614] selection:bg-[#B99A61]/30 selection:text-[#171614]">
-      {/* 1. Announcement Bar */}
-      <AnnouncementBar
-        config={config}
-        onOpenDemoCustomizer={() => setIsDemoCustomizerOpen(true)}
-      />
-
-      {/* 2. Header */}
+      {/* Header */}
       <Header
         config={config}
         onNavigate={handleNavigate}
